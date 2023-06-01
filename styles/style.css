@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+}
+
+.menu {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.39);
+}
+
+.menu .logo {
+  color: #ffa900;
+  font-weight: 900;
+}
+
+.menu .active,
+.menu li:hover {
+  color: #ffa900;
+  border-bottom: 2px solid #ffa900;
+  font-weight: 600;
+}
+
+.menu,
+ul {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.menu button {
+  width: 180px;
+  border-radius: 25px;
+  background-color: #ffa900;
+  color: inherit;
+  text-transform: inherit;
+}
+
+.menu button:hover {
+  background-color: blue;
+}
+
+.one {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background: url(/img/banner.jpg) no-repeat;
+  background-size: cover;
+}
+
+.one .text {
+  width: 600px;
+  height: 600px;
+  margin: 15% 10%;
+  text-align: left;
+
+}
+
+/* .two{
+    background-color: red;
+    color: #10e256;
+    padding: 20px 30px;
+} */
+
+.one .text button{
+    width: 150px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+
+.two .card {
+  width: 30%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.two button,
+input {
+  width: 200px;
+  padding: 10px;
+  border: none;
+}
+
