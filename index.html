@@ -1,38 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/mobile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
     <title>Teste</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="one">
+      <nav>
+        <div class="menu-mobile">
+          <p>...</p>
+        </div>
         <div class="menu">
-            <div class="logo">exemplo</div>
-            <ul>
-                <li class="active"> <a href="#">home</a> </li>
-                <li> <a href="#">about us</a> </li>
-                <li> <a href="#">contacts</a> </li>
-                <li> <a href="#">typography</a> </li>
-            </ul>
-            <button>book a tour now</button>
+          <div class="logo">exemplo</div>
+          <ul>
+            <li class="active"><a href="#">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contacts</a></li>
+            <li><a href="#">typography</a></li>
+          </ul>
+          <button>book a tour now</button>
         </div>
-        <div class="text">
-            <h1>UNIQUE TRAVEL INSIGHTS</h1>
-            <p>Our travel agency is ready to offer you an exciting vacation that is designed to fit your own needs and wishes. Whether it’s an exotic cruise or a trip to your favorite resort, you will surely have the best experience.</p>
-            <button>LEARN MORE</button>
-        </div>
+      </nav>
+
+      <div class="text">
+        <h1>UNIQUE TRAVEL INSIGHTS</h1>
+        <p>
+          Our travel agency is ready to offer you an exciting vacation that is
+          designed to fit your own needs and wishes. Whether it’s an exotic
+          cruise or a trip to your favorite resort, you will surely have the
+          best experience.
+        </p>
+        <button>LEARN MORE</button>
+      </div>
     </section>
     <section class="two">
-        <div class="card">
-            <p>Lorem ipsum dolor sit amet.</p>
-            <input type="text" >
-            <button>Teste</button>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus porro placeat mollitia. Fugiat quisquam doloribus eius minima. Tempore, quos? Voluptas, id placeat alias omnis quo blanditiis distinctio aut, natus animi magnam ipsam dicta rem rerum cupiditate dolores vitae recusandae temporibus magni. Excepturi eos recusandae soluta adipisci, ex maiores aperiam! Natus.</p>
+      <div class="card">
+        <h2>find your tour</h2>
+        <div class="form">
+          <div class="list">
+            <label>from</label>
+            <input list="browsers1" placeholder="New York" />
+            <datalist id="browsers1">
+              <option value="New York"></option>
+              <option value="Lisbon"></option>
+              <option value="Stockholm"></option>
+            </datalist>
+          </div>
+          <div class="list">
+            <label>from</label>
+            <input list="browsers2" placeholder="Chicago" />
+            <datalist id="browsers2">
+              <option value="Chicago"></option>
+              <option value="Madrid"></option>
+              <option value="Paris"></option>
+            </datalist>
+          </div>
+          <div class="department">
+            <span class="start date">
+              <label>Depart Date</label>
+              <input type="date" placeholder="Choose the date"/>
+            </span>
+
+            <span class="final-date">
+              <label>Duration</label>
+              <input list="duration" placeholder="Any length" />
+              <datalist id="duration">
+                <option value="2 days"></option>
+                <option value="3 days"></option>
+                <option value="4 days"></option>
+              </datalist>
+            </span>
+          </div>
+          <div class="people">
+            <span class="adults">
+                <p>...</p>
+            </span>
+            <span class="children">
+                <p>...</p>
+            </span>
+          </div>
         </div>
+        <button>search flight</button>
+      </div>
     </section>
-</body>
+  </body>
 </html>

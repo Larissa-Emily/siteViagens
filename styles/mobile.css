@@ -1,21 +1,28 @@
 @media (min-width: 990px) {
-    .one {
-      height: 100vh;
-      position: relative;
-    }
-    .two .card {
-      position: absolute;
-      bottom: 50%;
-      right: 10%;
-    }
+  .one {
+    height: 100vh;
+    position: relative;
   }
-  
-  @media (max-width: 990px) {
-    .two .card {
-      width: 80%;
-    }
-    .one .text {
-      width: 400px;
-    }
+  .two .card {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
   }
-  
+}
+
+@media (max-width: 990px) {
+  .two .card {
+    width: 80%;
+  }
+  .one .text {
+    width: 85%;
+    margin: 0;
+    padding: 10%;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav .menu-mobile {
+    display: block;
+  }
+}
