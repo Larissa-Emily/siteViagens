@@ -5,9 +5,16 @@
   font-family: sans-serif;
 }
 
+:root {
+  --text-transform: uppercase;
+  --color-text: #fff;
+  --color-yelow: #ffa900;
+  --color-blue: #0000ff;
+}
+
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--color-text);
 }
 
 ul li {
@@ -29,14 +36,14 @@ nav .menu-mobile {
 }
 
 .menu .logo {
-  color: #ffa900;
+  color: var(--color-yelow);
   font-weight: 900;
 }
 
 .menu .active,
 .menu li:hover {
-  color: #ffa900;
-  border-bottom: 2px solid #ffa900;
+  color: var(--color-yelow);
+  border-bottom: 2px solid var(--color-yelow);
   font-weight: 600;
 }
 
@@ -44,27 +51,29 @@ nav .menu-mobile {
 ul {
   display: flex;
   justify-content: space-around;
-  text-transform: uppercase;
+  text-transform: var(--text-transform);
 }
 
-.menu button {
+.menu button,
+.card .bnt {
   width: 200px;
   padding: 15px;
   border-radius: 25px;
   cursor: pointer;
-  background-color: #ffa900;
-  color: inherit;
-  text-transform: inherit;
+  background-color: var(--color-yelow);
+  color: var(--color-text);
+  text-transform: var(--text-transform);
 }
 
-.menu button:hover {
-  background-color: blue;
+.menu button:hover,
+.card .bnt:hover {
+  background-color: var(--color-blue);
 }
 
 .one {
   width: 100%;
   height: 500px;
-  color: #fff;
+  color: var(--color-text);
   position: relative;
   background: url(/img/banner.jpg) no-repeat;
   background-size: cover;
@@ -87,16 +96,16 @@ ul {
 .one .text button {
   width: 200px;
   background-color: transparent;
-  color: #fff;
+  color: var(--color-text);
   border-radius: 20px;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-text);
   padding: 15px;
   margin-top: 50px;
   cursor: pointer;
 }
 
 .one .text button:hover {
-  background-color: #ffa900;
+  background-color: var(--color-yelow);
   border: none;
 }
 
@@ -114,8 +123,7 @@ input {
 }
 
 .card {
-  width: 70%;
-  height: 600px;
+  width: 75%;
   padding: 25px;
   margin: 0 auto;
   border-radius: 15px;
@@ -125,6 +133,7 @@ input {
 .card h2 {
   color: #151515;
   font-weight: 400;
+  text-transform: var(--text-transform);
 }
 
 .card .form label {
@@ -132,16 +141,36 @@ input {
   font-size: 0.8em;
   text-transform: capitalize;
   margin-bottom: 5px;
-  color: #151515c0;
+  color: #15151560;
 }
 
-.card .form .list {
+.card .form .list,
+.card .form .department{
   padding-top: 30px;
 }
 
 .card .form input {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
+  font-size: 20px;
   border-radius: 15px;
   border: none;
+}
+
+.card .form .department{
+  display: flex;
+  gap: 50px;
+}
+
+.card .form .department span{
+  width: 100%;
+}
+
+.card .bnt {
+  width: 100%;
+  color: var(--color-text);
+}
+
+.card .people{
+  padding: 30px;
 }

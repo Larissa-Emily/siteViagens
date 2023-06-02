@@ -6,13 +6,14 @@
   .two .card {
     position: absolute;
     bottom: 20%;
-    right: 10%;
+    right: 8%;
   }
 }
 
 @media (max-width: 990px) {
   .two .card {
-    width: 80%;
+    width: 78%;
+    margin-top: 30px;
   }
   .one .text {
     width: 85%;
@@ -24,5 +25,21 @@
   }
   nav .menu-mobile {
     display: block;
+  }
+  .card .form .department {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card .form .department {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .two .card {
+    bottom: 30%;
   }
 }
