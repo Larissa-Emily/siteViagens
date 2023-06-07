@@ -55,7 +55,9 @@ ul {
 }
 
 .menu button,
-.card .bnt {
+.card .bnt,
+.text-main button,
+.gallery button {
   width: 200px;
   padding: 15px;
   border-radius: 25px;
@@ -66,7 +68,9 @@ ul {
 }
 
 .menu button:hover,
-.card .bnt:hover {
+.card .bnt:hover,
+.text-main button:hover,
+.gallery button:hover {
   background-color: var(--color-blue);
 }
 
@@ -145,7 +149,7 @@ input {
 }
 
 .card .form .list,
-.card .form .department{
+.card .form .department {
   padding-top: 30px;
 }
 
@@ -157,12 +161,12 @@ input {
   border: none;
 }
 
-.card .form .department{
+.card .form .department {
   display: flex;
   gap: 50px;
 }
 
-.card .form .department span{
+.card .form .department span {
   width: 100%;
 }
 
@@ -171,6 +175,64 @@ input {
   color: var(--color-text);
 }
 
-.card .people{
+.card .people {
   padding: 30px;
+}
+
+.text-main {
+  padding: 10% 10% 2% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-main h1 {
+  font-size: 48px;
+  color: #151515;
+  text-transform: var(--text-transform);
+}
+
+.gallery {
+  padding: 5%;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery img {
+  width: 90%;
+  height: 400px;
+  margin: 20px;
+}
+
+.gallery .img {
+  position: relative;
+}
+
+.gallery button {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  right: 0%;
+  left: 0%;
+}
+
+.gallery .inf{
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery .inf span{
+  color: var(--color-yelow);
+}
+
+.gallery .inf span , 
+.gallery .inf p{
+  font-size: 1.3em;
+}
+
+.gallery .inf p:hover{
+  color: var(--color-yelow);
+  cursor: pointer;
 }
