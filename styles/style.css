@@ -202,11 +202,17 @@ input {
 .gallery img {
   width: 90%;
   height: 400px;
+  transition: scale 500ms;
   margin: 20px;
+}
+
+.gallery img:hover {
+  scale: 120%;
 }
 
 .gallery .img {
   position: relative;
+  overflow: hidden;
 }
 
 .gallery button {
