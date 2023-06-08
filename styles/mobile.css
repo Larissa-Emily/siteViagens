@@ -1,24 +1,26 @@
 @media (min-width: 990px) {
   .one {
-    height: 100vh;
+    height: 90vh;
     position: relative;
   }
   .two .card {
     position: absolute;
+    width: 35%;
     bottom: 20%;
     right: 8%;
   }
 }
 
 @media (max-width: 1190px) {
-  .gallery {
+  .gallery,
+  .typeServices {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 990px) {
   .two .card {
-    width: 78%;
+    width: clamp(60%, 80%, 80%);
     margin-top: 30px;
   }
   .one .text {
@@ -45,7 +47,8 @@
 }
 
 @media (max-width: 790px) {
-  .gallery {
+  .gallery,
+  .typeServices {
     grid-template-columns: 1fr;
   }
 }
@@ -58,6 +61,6 @@
 
 @media (min-width: 1280px) {
   .two .card {
-    bottom: 30%;
+    bottom: 25%;
   }
 }

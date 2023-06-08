@@ -84,7 +84,7 @@ ul {
 }
 
 .one .text {
-  width: 500px;
+  width: clamp(350px, 450px, 500px);
   margin: 10% 10%;
   text-align: left;
 }
@@ -114,8 +114,10 @@ ul {
 }
 
 .two .card {
-  width: 30%;
+  width: clamp(30%, 30%, 40%);
+  padding: 25px;
   margin: 0 auto;
+  border-radius: 15px;
   background-color: aliceblue;
 }
 
@@ -124,14 +126,6 @@ input {
   width: 200px;
   padding: 10px;
   border: none;
-}
-
-.card {
-  width: 75%;
-  padding: 25px;
-  margin: 0 auto;
-  border-radius: 15px;
-  background-color: #eeefefe1;
 }
 
 .card h2 {
@@ -223,22 +217,59 @@ input {
   left: 0%;
 }
 
-.gallery .inf{
+.gallery .inf {
   padding: 15px 25px;
   display: flex;
   justify-content: space-between;
 }
 
-.gallery .inf span{
+.gallery .inf span {
   color: var(--color-yelow);
 }
 
-.gallery .inf span , 
-.gallery .inf p{
+.gallery .inf span,
+.gallery .inf p {
   font-size: 1.3em;
 }
 
-.gallery .inf p:hover{
+.gallery .inf p:hover {
   color: var(--color-yelow);
   cursor: pointer;
+}
+
+.services{
+  background-color: #f7f7f7;
+}
+
+.typeServices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 0px;
+}
+
+.itensServices {
+  width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid #1515151a;
+  border-radius: 3%;
+}
+
+.itensServices:hover{
+  background-color: #fff;
+  box-shadow: 1px 2px 4px 1px #79797948;
+  border: none;
+}
+
+.itensServices h2{
+  font-size: 20px;
+  color: #151515;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0px;
+}
+
+.itensServices p{
+  color: #15151552;
+  padding: 10px 0px 25px 0px;
+
 }
