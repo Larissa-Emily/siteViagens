@@ -1,3 +1,3 @@
 # Template de site de viangens
 
-## Tarefa do dia  -- fazer o botao de quantidade de pessoas com javascript
+##  Resta a fazer -- terminar o footer da ṕágina
