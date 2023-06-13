@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
+    <script src="script.js" defer></script>
     <title>Teste</title>
   </head>
   <body>
     <section class="one">
-      <nav>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">CONTACTS</a>
+          <a href="#">TYPOGRAPHY</a>
+          <button class="btn-menu">BOOK A TOUR NOW</button>
+        </div>
+      </div>
+      <button class="nav-button" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <!-- <nav>
         <div class="menu-mobile">
           <p>...</p>
         </div>
@@ -24,7 +47,7 @@
           </ul>
           <button>book a tour now</button>
         </div>
-      </nav>
+      </nav> -->
 
       <div class="text">
         <h1>UNIQUE TRAVEL INSIGHTS</h1>
@@ -185,5 +208,14 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="text-footer">
+        <h2>BUY A TOUR WITHOUT LEAVING YOUR HOME</h2>
+        <p>
+          Using our website, you can book any tour just in a couple of clicks.
+        </p>
+      </div>
+      <button class="btn-footer">BOOK NOW</button>
+    </footer>
   </body>
 </html>

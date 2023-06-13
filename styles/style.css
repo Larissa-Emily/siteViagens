@@ -26,35 +26,75 @@ button {
   border: none;
 }
 
-nav {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.39);
+/*Menu*/
+
+.nav-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #0062b5;
+  margin: 8px;
+  cursor: pointer;
 }
 
-nav .menu-mobile {
-  display: none;
+.nav-button i {
+  color: #fff;
 }
 
-.menu .logo {
-  color: var(--color-yelow);
-  font-weight: 900;
+.overlay {
+  width: 0;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.9);
+  z-index: 9; /*fica sobre qualquer coisa do site*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
 }
 
-.menu .active,
-.menu li:hover {
-  color: var(--color-yelow);
-  border-bottom: 2px solid var(--color-yelow);
-  font-weight: 600;
+.overlay-content {
+  width: 100%;
+  position: relative;
+  top: 25%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.menu,
-ul {
-  display: flex;
-  justify-content: space-around;
-  text-transform: var(--text-transform);
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-size: 34px;
+  transition: 0.3s;
 }
 
-.menu button,
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay,
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.btn-menu,
 .card .bnt,
 .text-main button,
 .gallery button {
@@ -67,11 +107,12 @@ ul {
   text-transform: var(--text-transform);
 }
 
-.menu button:hover,
+.btn-menu:hover,
 .card .bnt:hover,
 .text-main button:hover,
 .gallery button:hover {
   background-color: var(--color-blue);
+  transition: all 0.5s;
 }
 
 .one {
@@ -97,7 +138,8 @@ ul {
   margin-top: 30px;
 }
 
-.one .text button {
+.one .text button,
+.footer .btn-footer {
   width: 200px;
   background-color: transparent;
   color: var(--color-text);
@@ -108,9 +150,11 @@ ul {
   cursor: pointer;
 }
 
-.one .text button:hover {
+.one .text button:hover,
+.footer .btn-footer:hover {
   background-color: var(--color-yelow);
   border: none;
+  transition: ease 0.5s;
 }
 
 .two .card {
@@ -191,6 +235,7 @@ input {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  transition: .5s;
 }
 
 .gallery img {
@@ -201,7 +246,7 @@ input {
 }
 
 .gallery img:hover {
-  scale: 120%;
+  scale: 105%;
 }
 
 .gallery .img {
@@ -242,6 +287,7 @@ input {
 }
 
 .typeServices {
+  padding-bottom: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px 0px;
@@ -257,7 +303,8 @@ input {
 
 .itensServices:hover{
   background-color: #fff;
-  box-shadow: 1px 2px 4px 1px #79797948;
+  box-shadow: 1px 2px 6px 1px #b8b8b834;
+  transition: ease-out 0.5s;
   border: none;
 }
 
@@ -272,4 +319,23 @@ input {
   color: #15151552;
   padding: 10px 0px 25px 0px;
 
+}
+
+.footer{
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+}
+
+.text-footer{
+  padding: 80px 30px;
+
+}
+
+.footer h2{
+  color: #ffa900;
+}
+
+.footer p{
+  color: #818181;
 }
