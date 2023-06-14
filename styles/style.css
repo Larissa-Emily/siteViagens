@@ -120,7 +120,9 @@ button {
   height: 500px;
   color: var(--color-text);
   position: relative;
-  background: url(/img/banner.jpg) no-repeat;
+  background-color: #151515;
+  background: url(/img/banner.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
