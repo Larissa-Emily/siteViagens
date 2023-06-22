@@ -5,7 +5,7 @@
   }
   .two .card {
     position: absolute;
-    width: 35%;
+    width: 30%;
     bottom: 20%;
     right: 8%;
   }
@@ -40,9 +40,13 @@
   }
   .text-main {
     display: block;
+    margin: 10%;
+    padding-top: 10%;
   }
   .text-main h1 {
+    font-size: 30px;
     margin-bottom: 30px;
+
   }
 }
 
@@ -53,7 +57,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1400px) {
   .card .form .department {
     flex-wrap: wrap;
   }

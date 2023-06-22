@@ -19,203 +19,190 @@
   <body>
     <section class="one">
       <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#">HOME</a>
           <a href="#">ABOUT US</a>
           <a href="#">CONTACTS</a>
           <a href="#">TYPOGRAPHY</a>
-          <button class="btn-menu">BOOK A TOUR NOW</button>
         </div>
       </div>
       <button class="nav-button" onclick="openNav()">
         <i class="fa-solid fa-bars fa-2x"></i>
       </button>
-      <!-- <nav>
-        <div class="menu-mobile">
-          <p>...</p>
-        </div>
-        <div class="menu">
-          <div class="logo">exemplo</div>
-          <ul>
-            <li class="active"><a href="#">home</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">contacts</a></li>
-            <li><a href="#">typography</a></li>
-          </ul>
-          <button>book a tour now</button>
-        </div>
-      </nav> -->
-
       <div class="text">
-        <h1>UNIQUE TRAVEL INSIGHTS</h1>
+        <h1>INFORMAÇÕES ÚNICAS DE VIAGEM</h1>
         <p>
-          Our travel agency is ready to offer you an exciting vacation that is
-          designed to fit your own needs and wishes. Whether it’s an exotic
-          cruise or a trip to your favorite resort, you will surely have the
-          best experience.
+          Nossa agência de viagens está pronta para oferecer a você férias
+          emocionantes, projetadas para atender às suas próprias necessidades e
+          desejos. Seja um cruzeiro exótico ou uma viagem ao seu resort
+          favorito, você certamente terá a melhor experiência.
         </p>
-        <button>LEARN MORE</button>
+        <button>SABER MAIS</button>
       </div>
     </section>
     <section class="two">
       <div class="card">
-        <h2>find your tour</h2>
+        <h2>ENCONTRE SEU PASSEIO</h2>
         <div class="form">
           <div class="list">
-            <label>from</label>
-            <input list="browsers1" placeholder="New York" />
+            <label>de</label>
+            <input list="browsers1" placeholder="São Paulo" />
             <datalist id="browsers1">
-              <option value="New York"></option>
-              <option value="Lisbon"></option>
-              <option value="Stockholm"></option>
+              <option value="Minas Gerais"></option>
+              <option value="Natal"></option>
+              <option value="Recife"></option>
             </datalist>
           </div>
           <div class="list">
-            <label>from</label>
-            <input list="browsers2" placeholder="Chicago" />
+            <label>para</label>
+            <input list="browsers2" placeholder="Rio de Janeiro" />
             <datalist id="browsers2">
-              <option value="Chicago"></option>
-              <option value="Madrid"></option>
-              <option value="Paris"></option>
+              <option value="Mato Grosso"></option>
+              <option value="Amazonas"></option>
+              <option value="Tocantins"></option>
             </datalist>
           </div>
           <div class="department">
             <span class="start-date">
-              <label>Depart Date</label>
+              <label>Data De Partida</label>
               <input type="date" placeholder="Choose the date" />
             </span>
 
             <span class="final-date">
-              <label>Duration</label>
-              <input list="duration" placeholder="Any length" />
+              <label>Duração</label>
+              <input list="duration" placeholder="Quantidade de dias" />
               <datalist id="duration">
-                <option value="2 days"></option>
-                <option value="3 days"></option>
-                <option value="4 days"></option>
+                <option value="2 dias"></option>
+                <option value="3 dias"></option>
+                <option value="4 dias"></option>
               </datalist>
             </span>
           </div>
-          <div class="people">
-            <span class="adults">
-              <p>...</p>
-            </span>
-            <span class="children">
-              <p>...</p>
-            </span>
-          </div>
         </div>
-        <button class="bnt">search flight</button>
+        <button class="bnt acionaModal" onclick="acionaModal()">
+          procurar voo
+        </button>
       </div>
+      <section class="modal">
+        <p>
+          Voos não disponiveis no momento!
+        </p>
+        <span
+          ><button class="fechaModal" onclick="fechaModal()">
+            fechar
+          </button></span
+        >
+      </section>
     </section>
     <section class="best">
       <div class="text-main">
-        <h1>our best tours</h1>
-        <button>view all tours</button>
+        <h1>NOSSOS MELHORES PASSEIOS</h1>
+        <button>ver todos</button>
       </div>
       <section class="gallery">
         <div class="img">
-          <img src="./img/landing-private-airlines-01-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/agustin-diaz-gargiulo-7F65HDP0-E0-unsplash.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>France, Paris</p>
-            <span>fron $280</span>
+            <p>Rio de Janeiro, RJ</p>
+            <span>valor $280</span>
           </div>
         </div>
         <div class="img">
-          <img src="./img/landing-private-airlines-02-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/pernambuco.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>USA, Boston</p>
-            <span>fron $480</span>
+            <p>Pernambuco, PE</p>
+            <span>valor $480</span>
           </div>
         </div>
         <div class="img">
-          <img src="./img/landing-private-airlines-03-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/Sao-Paulo-SP-Visit-Brasil-7-1-1024x683.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>Italy, Venice</p>
-            <span>fron $350</span>
+            <p>São Paulo, SP</p>
+            <span>valor $350</span>
           </div>
         </div>
         <div class="img">
-          <img src="./img/landing-private-airlines-04-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/natal.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>Spain, Benidorm</p>
-            <span>fron $350</span>
+            <p>Natal, RN</p>
+            <span>valor $350</span>
           </div>
         </div>
         <div class="img">
-          <img src="./img/landing-private-airlines-05-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/mato-grosso.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>Egypt, Sharm El Sheikh</p>
-            <span>fron $520</span>
+            <p>Mato Grosso, MT</p>
+            <span>valor $520</span>
           </div>
         </div>
         <div class="img">
-          <img src="./img/landing-private-airlines-06-570x370.jpg" />
-          <button>learn more</button>
+          <img src="./img/recife.jpg" />
+          <button>SABER MAIS</button>
           <div class="inf">
-            <p>UK, London</p>
-            <span>fron $600</span>
+            <p>Recife, PE</p>
+            <span>valor $600</span>
           </div>
         </div>
       </section>
     </section>
     <section class="services">
       <div class="text-main">
-        <h1>our services</h1>
+        <h1>nossos serviços</h1>
       </div>
       <div class="typeServices">
         <div class="itensServices">
           <span><img src="./img/1.svg" /></span>
-          <h2>Air Tickets</h2>
+          <h2>Passagens aéreas</h2>
           <p>
-            At our travel agency, you can book air tickets to any world
-            destination. We also provide online ticket booking via our website
-            in just a couple of steps.
+            Em nossa agência de viagens, você pode reservar passagens aéreas
+            para qualquer destino do mundo. Também fornecemos reserva de
+            ingressos on-line por meio de nosso site em apenas algumas etapas.
           </p>
         </div>
         <div class="itensServices">
           <span><img src="./img/2.svg" /></span>
-          <h2>Voyages & Cruises</h2>
+          <h2>Viagens e Cruzeiro</h2>
           <p>
-            Besides regular tours and excursions, we also offer a variety of
-            cruises & sea voyages for different customers looking for awesome
-            experiences.
+            Além de passeios e excursões regulares, também oferecemos uma
+            variedade de cruzeiros e viagens marítimas para diferentes clientes
+            que procuram experiências incríveis.
           </p>
         </div>
         <div class="itensServices">
           <span><img src="./img/3.svg" /></span>
-          <h2>Hotel Bookings</h2>
+          <h2>Reservas de hotéis</h2>
           <p>
-            We offer a wide selection of hotel ranging from 5-star ones to small
-            properties located worldwide so that you could book a hotel you
-            like.
+            Oferecemos uma ampla seleção de hotéis, desde 5 estrelas até pequenas propriedades localizadas em todo o mundo, para que você possa reservar um hotel de sua preferência.
           </p>
         </div>
         <div class="itensServices">
           <span><img src="./img/4.svg" /></span>
-          <h2>Tailored Summer Tours</h2>
+          <h2>Tours de verão sob medida</h2>
           <p>
-            Our agency provides varied tours including tailored summer tours for
-            clients who are searching for an exclusive and memorable vacation.
+            Nossa agência oferece passeios variados, incluindo passeios de verão personalizados para clientes que buscam férias exclusivas e memoráveis.
           </p>
         </div>
       </div>
     </section>
     <footer class="footer">
       <div class="text-footer">
-        <h2>BUY A TOUR WITHOUT LEAVING YOUR HOME</h2>
+        <h2>COMPRE UM TOUR SEM SAIR DE CASA</h2>
         <p>
-          Using our website, you can book any tour just in a couple of clicks.
+          Usando nosso site, você pode reservar qualquer passeio com apenas alguns cliques.
         </p>
       </div>
-      <button class="btn-footer">BOOK NOW</button>
+      <button class="btn-footer">AGENDE AGORA</button>
     </footer>
   </body>
 </html>
+
+
+
+
+

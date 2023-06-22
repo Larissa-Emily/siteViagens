@@ -32,7 +32,7 @@ button {
   border: 0;
   border-radius: 4px;
   padding: 0px;
-  background-color: #0062b5;
+  background-color: transparent;
   margin: 8px;
   cursor: pointer;
 }
@@ -52,6 +52,8 @@ button {
   overflow-x: hidden;
   transition: all 0.5s;
 }
+
+
 
 .overlay-content {
   width: 100%;
@@ -94,10 +96,10 @@ button {
   }
 }
 
-.btn-menu,
 .card .bnt,
 .text-main button,
-.gallery button {
+.gallery button,
+.modal button {
   width: 200px;
   padding: 15px;
   border-radius: 25px;
@@ -107,12 +109,28 @@ button {
   text-transform: var(--text-transform);
 }
 
-.btn-menu:hover,
+.card .bnt,
+.modal button {
+  margin-top: 20px;
+}
+
 .card .bnt:hover,
 .text-main button:hover,
-.gallery button:hover {
+.gallery button:hover,
+.modal button:hover {
   background-color: var(--color-blue);
   transition: all 0.5s;
+}
+
+.modal {
+  width: clamp(500px, 600px, 700px);
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 30%;
+  right: 30%;
+  background-color: rgba(224, 224, 224, 0.849);
+  padding: 5%;
 }
 
 .one {
@@ -121,7 +139,7 @@ button {
   color: var(--color-text);
   position: relative;
   background-color: #151515;
-  background: url(/img/banner.jpg);
+  background: url(/img/krys-amon-BVj6AnXs3TA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -220,7 +238,7 @@ input {
 }
 
 .text-main {
-  padding: 10% 10% 2% 10%;
+  padding: 10% 0% 2% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -237,7 +255,7 @@ input {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .gallery img {
@@ -284,60 +302,65 @@ input {
   cursor: pointer;
 }
 
-.services{
+
+.services {
   background-color: #f7f7f7;
 }
 
 .typeServices {
-  padding-bottom: 50px;
+  padding:10px 10px 50px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px 0px;
+  gap: 25px 10px;
+  overflow:hidden ;
 }
 
 .itensServices {
-  width: 400px;
+  max-width: 400px;
   padding: 30px;
   margin: 0 auto;
   border: 1px solid #1515151a;
   border-radius: 3%;
 }
 
-.itensServices:hover{
+.itensServices:hover {
   background-color: #fff;
   box-shadow: 1px 2px 6px 1px #b8b8b834;
   transition: ease-out 0.5s;
   border: none;
 }
 
-.itensServices h2{
+.itensServices h2 {
   font-size: 20px;
   color: #151515;
   border-bottom: 1px solid #ccc;
   padding: 20px 0px;
 }
 
-.itensServices p{
+.itensServices p {
   color: #15151552;
   padding: 10px 0px 25px 0px;
-
 }
 
-.footer{
+.footer {
   background-color: #151515;
+  line-height: clamp(20px, 30px, 30px);
   display: flex;
   align-items: center;
 }
 
-.text-footer{
-  padding: 80px 30px;
-
+.text-footer {
+  padding: 80px 40px;
 }
 
-.footer h2{
+.footer h2 {
   color: #ffa900;
 }
 
-.footer p{
+.footer p {
   color: #818181;
+}
+
+.footer button{
+  margin-bottom: 30px;
 }
