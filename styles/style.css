@@ -124,9 +124,9 @@ button {
 
 .modal {
   width: clamp(500px, 600px, 700px);
-  display: none;
+  display: none !important;
   position: absolute;
-  top: 200px;
+  top: 50%;
   left: 30%;
   right: 30%;
   background-color: rgba(224, 224, 224, 0.849);
@@ -139,7 +139,7 @@ button {
   color: var(--color-text);
   position: relative;
   background-color: #151515;
-  background: url(/img/krys-amon-BVj6AnXs3TA-unsplash.jpg);
+  background: url(/img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
