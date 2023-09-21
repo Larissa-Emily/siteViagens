@@ -20,7 +20,7 @@
 
 @media (max-width: 990px) {
   .two .card {
-    width: clamp(60%, 80%, 80%);
+    width: clamp(60%, 70%, 75%);
     margin-top: 30px;
   }
   .one .text {
@@ -40,13 +40,16 @@
   }
   .text-main {
     display: block;
-    margin: 10%;
-    padding-top: 10%;
   }
   .text-main h1 {
     font-size: 30px;
     margin-bottom: 30px;
-
+  }
+  .modal {
+    width: 300px;
+    top: 80%;
+    left: 50%;
+    
   }
 }
 
@@ -68,3 +71,6 @@
     bottom: 25%;
   }
 }
+
+
+

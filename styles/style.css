@@ -123,12 +123,12 @@ button {
 }
 
 .modal {
-  width: clamp(500px, 600px, 700px);
-  display: none !important;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  right: 30%;
+  width: clamp(400px, 600px, 700px);
+  display: none;
+  position:absolute; 
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
   background-color: rgba(224, 224, 224, 0.849);
   padding: 5%;
 }
@@ -138,9 +138,7 @@ button {
   height: 500px;
   color: var(--color-text);
   position: relative;
-  background-color: #151515;
-  background: url(/img/banner.jpg);
-  background-repeat: no-repeat;
+  background: url(/viagem/img/banner.jpg);
   background-size: cover;
 }
 
@@ -238,9 +236,10 @@ input {
 }
 
 .text-main {
-  padding: 10% 0% 2% 5%;
   display: flex;
   justify-content: space-between;
+  padding-top: 10%;
+  margin: 0% 10%;
 }
 
 .text-main h1 {

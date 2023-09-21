@@ -1,3 +1,3 @@
-# Template de site de viangens
+# Template de site de viagens
 
-##  Resta a fazer -- terminar o footer da ṕágina
+## Problema com o banner
