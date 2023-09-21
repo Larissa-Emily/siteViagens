@@ -138,7 +138,7 @@ button {
   height: 500px;
   color: var(--color-text);
   position: relative;
-  background: url(/viagem/img/banner.jpg);
+  background:black;
   background-size: cover;
 }
 
